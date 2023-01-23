@@ -1,13 +1,11 @@
 //TODO: src/validator.js: implementar objeto validator ==> 2 metodos:
 // validator.isValid(creditCardNumber)==> retornar boolean si es válida
-//TODO: src/index.js: escuchar eventos del DOM, llamar validator.isValid() y validator.maskify() y actualizar resultado en UI
-//TODO: test/validator.spec.js tests de ejemplo e implementar tests para validator.isValid() y validator.maskify().
 // Insertar número de tarjeta a validar (texto) en un campo de texto vacío.
 //   Evitar escribir caracteres  no  numéricos (dígitos 0-9).
 //  Campo vacío no se valida ==> campo requerido 
 //  Comunicar a  usuaria si es taerjeta válida o no.
 // validator.maskify(creditCardNumber) ==> retornar string reemplazando todos los N° por # excepto los 4 últimos.
-// TODO:  metódos de validator (isValid y maskify) deben tener cobertura con pruebas unitarias. ¿???
+// metódos de validator (isValid y maskify) deben tener cobertura con pruebas unitarias. ¿???
 // TODO:  proyecto subido a  repo e interfaz "desplegada".
 //  Mostrar la franquicia de tarjeta
 // TODO: Requisitos cumplidos ==> posibilidad pedir sesión de Project Feedback con unx coach.
