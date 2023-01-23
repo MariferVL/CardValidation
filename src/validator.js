@@ -6,64 +6,14 @@
 //  Comunicar a  usuaria si es taerjeta válida o no.
 // validator.maskify(creditCardNumber) ==> retornar string reemplazando todos los N° por # excepto los 4 últimos.
 // metódos de validator (isValid y maskify) deben tener cobertura con pruebas unitarias. 
-// TODO:  proyecto subido a  repo e interfaz "desplegada".
+// proyecto subido a  repo e interfaz "desplegada".
 //  Mostrar la franquicia de tarjeta
 // TODO: Requisitos cumplidos ==> posibilidad pedir sesión de Project Feedback con unx coach.
 
 
 // Test Data: 4137894711755904
 
-const dangerDiv = document.getElementById("danger");
-const successDiv = document.getElementById("success");
-
-const replacement = document.getElementById("toRemove");
-
-// Create new h3 and p elements
-const tittleBox = document.createElement("h3");
-const msgBox = document.createElement("p");
-
-let result;
-let description;
 let cardDigits;
-
-// Send validation msg to document
-function validate() {
-  //Get card number from user
-  const cardNumber = document.getElementById("cardnumber").value
-  const valid = isValid(cardNumber)
-  const cardBrand = getCardBrand(cardDigits[0]);
-
-
-  if (valid) {
-    //Show success in div#success
-    successDiv.appendChild(tittleBox);
-    successDiv.appendChild(msgBox);
-    document.getElementById("success").style.display = "inline";
-    replacement.replaceWith(successDiv);
-
-    result = "Tarjeta " + cardBrand + "\n" + maskify(cardNumber) + "\n Válida";
-    description = "Operación exitosa. La información bancaria ingresada es correcta.";
-  }
-  else {
-    // Show error message in div#danger
-    dangerDiv.appendChild(tittleBox);
-    dangerDiv.appendChild(msgBox);
-    document.getElementById("danger").style.display = "inline";
-    replacement.replaceWith(dangerDiv);
-
-    result = "Tarjeta " + cardBrand + "\n Inválida.";
-    description = "Debe ingresar nuevamente la información de su tarjeta.";
-  }
-  tittleBox.classList.add("alert-heading");
-
-  // Give h1 and p content
-  const h3Content = document.createTextNode(result);
-  const pContent = document.createTextNode(description);
-
-  tittleBox.appendChild(h3Content);
-  msgBox.appendChild(pContent);
-
-}
 
 // Validate card number using Luhn's algorithm
 function isValid(creditCardNumber) {
@@ -74,16 +24,16 @@ function isValid(creditCardNumber) {
     // Split input
     cardDigits = creditCardNumber.split('');
 
-    // const reversedCardDigits = cardDigits.reverse();
+    const reversedCardDigits = cardDigits.reverse();
 
     // console.log("Paso2 -Numero invertido: ", reversedCardDigits);
-    const stringToNum = cardDigits.map(function (str) {
+    const stringToNum = reversedCardDigits.map(function (str) {
       // using map() to convert array of strings to numbers
       return parseInt(str);
     });
 
     // Double value of every 2nd digit
-    for (let index = 0; index < stringToNum.length; index += 2) {
+    for (let index = 1; index < stringToNum.length; index += 2) {
       const doubleNum = Number(stringToNum[index]) * 2;
       stringToNum[index] = doubleNum;
 
@@ -143,8 +93,7 @@ function getCardBrand(firstNumber) {
 //replace all digits with # except the last 4.
 function maskify(creditCardNumber) {
   const listNumbers = creditCardNumber.split("");
-  // listNumbers.forEach((element, index) => { for (let i = 0; i < listNumbers.length - 4; i++) listNumbers[i] = "#"; });
-  listNumbers.forEach((element) => { if (listNumbers.indexOf(element) < listNumbers.length - 4) element = "#"; });
+  listNumbers.forEach((element) => { for (let i = listNumbers.indexOf(element); i < listNumbers.length - 4; i++) listNumbers[i] = "#"; });
 
   const maskedNum = listNumbers.join("");
 
@@ -153,18 +102,9 @@ function maskify(creditCardNumber) {
 }
 
 const components = {
-  validate, isValid, sumDigits, getCardBrand, maskify,
-  dangerDiv, successDiv, replacement, tittleBox,
-  msgBox, result, description, cardDigits
+  isValid, sumDigits, getCardBrand, maskify,
+  cardDigits
 };
 
 
-
-
 export default components;
-
-
-
-
-
-

@@ -1,7 +1,23 @@
 // importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
 import validator from '../src/validator';
+// import main from '../src/index';
 
-//TODO: test/validator.spec.js tests de ejemplo e implementar tests para validator.isValid() y validator.maskify().
+
+// test/validator.spec.js tests de ejemplo e implementar tests para validator.isValid() y validator.maskify().
+
+/* describe('main', () => {
+  it('debería ser un objeto', () => {
+    expect(typeof main).toBe('object');
+  });
+
+  describe('validator.validate', () => {
+    it('debería ser una función', () => {
+      expect(typeof main.validate).toBe('function');
+    });
+  });
+
+}); */
+
 
 describe('validator', () => {
   it('debería ser un objeto', () => {
@@ -26,6 +42,28 @@ describe('validator', () => {
     });
   });
 
+  describe('validator.getCardBrand', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.getCardBrand).toBe('function');
+    });
+
+    it('Debería retornar "American Express" para "3"', () => {
+      expect(validator.getCardBrand("3")).toBe("American Express");
+    });
+
+    it('Debería retornar  "Visa" para "4"', () => {
+      expect(validator.getCardBrand("4")).toBe("Visa");
+    });
+
+    it('Debería retornar "Mastercard" para "5"', () => {
+      expect(validator.getCardBrand("5")).toBe("Mastercard");
+    });
+
+    it('Debería retornar "" para "7"', () => {
+      expect(validator.getCardBrand("7")).toBe("");
+    });
+  });
+
   describe('validator.maskify', () => {
     it('debería ser una función', () => {
       expect(typeof validator.maskify).toBe('function');
@@ -43,4 +81,21 @@ describe('validator', () => {
       expect(validator.maskify('helloworld')).toBe('######orld');
     });
   });
+
+
+
+  describe('validator.sumDigits', () => {
+    it('debería ser una función', () => {
+      expect(typeof validator.sumDigits).toBe('function');
+    });
+
+    it('Debería retornar 11 para 29', () => {
+      expect(validator.sumDigits(29)).toBe(2);
+    });
+
+    it('Debería retornar 1 para 10', () => {
+      expect(validator.sumDigits(10)).toBe(1);
+    });
+  });
+
 });
