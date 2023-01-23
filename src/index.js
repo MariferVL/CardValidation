@@ -6,5 +6,3 @@ import elements from './validator.js';
 
 document.getElementById("validate").addEventListener("click", elements.validate, false);
 
-
-console.log(elements);

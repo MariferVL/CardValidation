@@ -41,7 +41,7 @@ function validate() {
     document.getElementById("success").style.display = "inline";
     replacement.replaceWith(successDiv);
 
-    result = "Tarjeta " + cardBrand + "\n" + maskify(cardNumber)  + "\n Válida";
+    result = "Tarjeta " + cardBrand + "\n" + maskify(cardNumber) + "\n Válida";
     description = "Operación exitosa. La información bancaria ingresada es correcta.";
   }
   else {
@@ -123,19 +123,19 @@ function sumDigits(n) {
 function getCardBrand(firstNumber) {
   let brand;
   switch (firstNumber) {
-    case "3":
-      brand = "American Express";
-      break;
-    case "4":
-      brand = "Visa";
-      break;
-    case "5":
-      brand = "Mastercard";
-      break;
+  case "3":
+    brand = "American Express";
+    break;
+  case "4":
+    brand = "Visa";
+    break;
+  case "5":
+    brand = "Mastercard";
+    break;
 
-    default:
-      brand = "";
-      break;
+  default:
+    brand = "";
+    break;
   }
   return brand;
 }
@@ -143,7 +143,9 @@ function getCardBrand(firstNumber) {
 //replace all digits with # except the last 4.
 function maskify(creditCardNumber) {
   const listNumbers = creditCardNumber.split("");
-  listNumbers.forEach((element, index) => {for (let i = 0; i < listNumbers.length - 4; i++) listNumbers[i] = "#"; });
+  // listNumbers.forEach((element, index) => { for (let i = 0; i < listNumbers.length - 4; i++) listNumbers[i] = "#"; });
+  listNumbers.forEach((element) => { if (listNumbers.indexOf(element) < listNumbers.length - 4) element = "#"; });
+
   const maskedNum = listNumbers.join("");
 
   //return string
