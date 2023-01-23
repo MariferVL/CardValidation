@@ -43,7 +43,7 @@ function validate() {
     document.getElementById("success").style.display = "inline";
     replacement.replaceWith(successDiv);
 
-    result = "Tarjeta " + cardBrand + maskify(cardNumber)  + " Válida";
+    result = "Tarjeta " + cardBrand + "\n" + maskify(cardNumber)  + "\n Válida";
     description = "Operación exitosa. La información bancaria ingresada es correcta.";
   }
   else {
@@ -53,7 +53,7 @@ function validate() {
     document.getElementById("danger").style.display = "inline";
     replacement.replaceWith(dangerDiv);
 
-    result = "Tarjeta " + cardBrand + " Inválida.";
+    result = "Tarjeta " + cardBrand + "\n Inválida.";
     description = "Debe ingresar nuevamente la información de su tarjeta.";
   }
   tittleBox.classList.add("alert-heading");
@@ -74,7 +74,7 @@ function isValid(creditCardNumber) {
   // Validate if card number is integer
   if (Number.isInteger(Number(creditCardNumber))) {
     // Split input
-    const cardDigits = creditCardNumber.split('');
+    cardDigits = creditCardNumber.split('');
 
     // const reversedCardDigits = cardDigits.reverse();
 
@@ -152,16 +152,16 @@ function maskify(creditCardNumber) {
   return maskedNum;
 }
 
-const validator = {
-  validate, isValid, sumDigits, getCardBrand, maskify,
-  dangerDiv, successDiv, replacement, tittleBox,
-  msgBox, result, description, cardDigits
-};
+// const validator = {
+//   validate, isValid, sumDigits, getCardBrand, maskify,
+//   dangerDiv, successDiv, replacement, tittleBox,
+//   msgBox, result, description, cardDigits
+// };
 
 
 
 
-export default validator;
+// export default validator;
 
 
 
