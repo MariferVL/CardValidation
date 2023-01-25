@@ -21,7 +21,6 @@ function validate() {
   const cardNumber = document.getElementById("cardnumber").value
   const valid = elements.isValid(cardNumber)
   const cardBrand = elements.getCardBrand(cardNumber);
-  console.log("Marca: " + cardBrand);
 
 
   if (valid) {

@@ -60,7 +60,6 @@ function sumDigits(n) {
 function getCardBrand(creditCardNumber) {
   const firstNumber = creditCardNumber.charAt(0);
 
-  console.log("Primer número: " + firstNumber);
   let brand;
   switch (firstNumber) {
   case "3":
