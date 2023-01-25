@@ -1,9 +1,3 @@
-<!--  TODO:  README que contiene una definición del producto.
-          > cómo pensaste en los usuarios + proceso para definir producto final a nivel de experiencia y de interfaz.
-          > Quiénes son los principales usuarios de producto.
-          > Cuáles son los objetivos de estos usuarios en relación con tu producto.
-          > Cómo crees que el producto que estás creando está resolviendo sus problemas. 
-
 
 <div id="volver"></div>
 
@@ -13,7 +7,8 @@
 <h1 align="center"><b>Proyecto Card Validation <br/>
  Laboratoria</b></h1>
  <br/>
-<img src="images/Laboratoria3.jpg" alt="Logo" width="110px" height="110px">
+  
+<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="110px" height="110px">
 
 <b>Autora</b>
 <br/>
@@ -24,11 +19,11 @@
   <p align="center">
        </summary>
     <br/>
-    <a href="https://github.com/MariferVL/CardValidation-Part2"><strong>Acceso a Documentos »</strong></a>
+    <a href="https://github.com/MariferVL/CardValidation-Part2" target="_blank"><strong>Acceso a Documentos »</strong></a>
     <br/>
-     <a href="https://marifervl.github.io/CardValidation-Part2/src/"><strong>Acceso a Despliegue »</strong></a>
+     <a href="https://marifervl.github.io/CardValidation-Part2/src/" target="_blank"><strong>Acceso a Despliegue »</strong></a>
     <br/>
- 
+
   </p>
 </div>
 <br/>
@@ -43,6 +38,7 @@
       </ul>
     </li>
     <li><a href="#objetivos-de-aprendizaje-cumplidos">Objetivos de Aprendizaje Cumplidos</a></li>
+    <li><a href="#producto">Producto</a></li>
     <li><a href="#video-demo">Video Demo</a></li>
     <li><a href="#referencias">Referencias</a></li>
   </ol>
@@ -52,6 +48,7 @@
 ## Acerca del Proyecto
 
 <summary> 
+
 
 </summary>
 
@@ -68,7 +65,7 @@
 
 ## Objetivos de Aprendizaje Cumplidos
 
-  <summary>Durante la estructuración y creación de este proyecto logramos<b> adquirir conocimientos</b>  en las siguientes temáticas:</summary>
+  <summary>Durante la estructuración y creación de este proyecto logré<b> adquirir conocimientos</b>  en las siguientes temáticas:</summary>
     <details>
      <summary>1. CSS</summary>
       <ul>
@@ -97,7 +94,7 @@
   </details>
 
   <details>
-     <summary>3. JavaScript
+     <summary>3. JavaScript</summary>
       <ul>
         <li>
           - [x] Tipos de datos primitivos
@@ -115,7 +112,7 @@
   </details>
 
   <details>
-     <summary>4. Control de Versiones (Git y GitHub)
+     <summary>4. Control de Versiones (Git y GitHub)</summary>
       <ul>
         <li>
           - [x] Git: Instalación y configuración
@@ -127,7 +124,7 @@
   </details>
 
   <details>
-     <summary>5. Centrado en el usuario
+     <summary>5. Centrado en el usuario</summary>
       <ul>
         <li>
             - [x] Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro
@@ -136,7 +133,7 @@
   </details>
 
   <details>
-     <summary>6. Diseño de producto
+     <summary>6. Diseño de producto</summary>
       <ul>
         <li>
           - [x] Crear prototipos de alta fidelidad que incluyan interacciones
@@ -166,9 +163,9 @@
 </details>
 
 <div align="center">
-  <img src="images/1radioXpregunta.png" width="300px" height="200px">
-  <img src="images/htmlHito1a.png" width="300px" height="200px">
-  <img src="images/jsHito1-2.png" width="300px" height="200px">
+  <img height="220" alt="interfaz Hito 1" src="https://user-images.githubusercontent.com/99364311/214477747-4e1e2121-456b-4045-bb35-4d5107551960.png">
+  <img height="220" alt="codigo Hito 1" src="https://user-images.githubusercontent.com/99364311/214477690-384f6b63-6f69-4d48-8d25-923a43f64c4f.png">
+
 </div>
 
 <br/>
@@ -176,20 +173,29 @@
 <details>
   <summary><b>Hito Opcional</b></summary>
   <ul>
-    <li>Mostrar la <b>franquicia</b> de tarjeta</li>
+    <li>Mostrar la <b>franquicia</b> de tarjeta.</li>
   </ul>
 </details>
 
 <div align="center">
-  <img src="/images/mensajeDeAlerta.gif" width="300px" height="200px">
-  <img src="/images/clickRadioButton.gif" width="300px" height="200px">
-</div>
+  <img height="220" alt="franquicia Valida" src="https://user-images.githubusercontent.com/99364311/214482214-80acb138-0769-407b-8b63-8ec6febf00ec.png">
+  <img height="220" alt="franquicia Invalida" src="https://user-images.githubusercontent.com/99364311/214482369-76ce82ac-c1f1-4172-b89c-5a39a697c22c.png">
 
+</div>
 <br/>
 <br/>
 <p align="left"><a href="#volver">Volver</a></p>
 <br/>
 
+
+## Producto
+  <summary><b>Hito 1</b></summary>
+  <ul>
+    <li><b>UX/UI</b>:  "cómo pensaste en los usuarios + proceso para definir producto final" </li>
+    <li><b></b> "principales usuarios de producto"</li>
+    <li><b></b>  "objetivos de estos usuarios en relación con tu producto"</li>
+    <li><b></b> "Cómo crees que está resolviendo sus problemas"</li>
+  </ul>
 
 ## Video Demo
 
