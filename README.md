@@ -8,7 +8,7 @@
  Laboratoria</b></h1>
  <br/>
   
-<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="110px" height="110px">
+<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="220px">
 
 <b>Autora</b>
 <br/>
@@ -199,7 +199,9 @@
 
 ## Video Demo
 
-https://user-images.githubusercontent.com/99364311/208135177-795d5c58-2de1-4a78-87f0-fa1f2673b495.mp4
+
+https://user-images.githubusercontent.com/99364311/214485979-e4656591-9b92-48d1-8959-d27aad651ed7.mp4
+
 
 <br/>
 
