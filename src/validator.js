@@ -1,16 +1,3 @@
-// src/validator.js: implementar objeto validator ==> 2 metodos:
-// validator.isValid(creditCardNumber)==> retornar boolean si es válida
-// Insertar número de tarjeta a validar (texto) en un campo de texto vacío.
-//   Evitar escribir caracteres  no  numéricos (dígitos 0-9).
-//  Campo vacío no se valida ==> campo requerido 
-//  Comunicar a  usuaria si es taerjeta válida o no.
-// validator.maskify(creditCardNumber) ==> retornar string reemplazando todos los N° por # excepto los 4 últimos.
-// metódos de validator (isValid y maskify) deben tener cobertura con pruebas unitarias. 
-// proyecto subido a  repo e interfaz "desplegada".
-//  Mostrar la franquicia de tarjeta
-// TODO: Requisitos cumplidos ==> posibilidad pedir sesión de Project Feedback con unx coach.
-
-
 // Test Data: 4137894711755904
 
 let cardDigits;
@@ -70,7 +57,10 @@ function sumDigits(n) {
 }
 
 // Function to get card financial institutuion (Visa, Mastercard or American Express)
-function getCardBrand(firstNumber) {
+function getCardBrand(creditCardNumber) {
+  const firstNumber = creditCardNumber.charAt(0);
+
+  console.log("Primer número: " + firstNumber);
   let brand;
   switch (firstNumber) {
   case "3":
@@ -103,7 +93,6 @@ function maskify(creditCardNumber) {
 
 const components = {
   isValid, sumDigits, getCardBrand, maskify,
-  cardDigits
 };
 
 

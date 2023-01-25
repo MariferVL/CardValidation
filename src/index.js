@@ -1,10 +1,8 @@
 import elements from './validator.js';
 
-
-// src/index.js: escuchar eventos del DOM, llamar validator.isValid() y validator.maskify() y actualizar resultado en UI
-
 let result;
 let description;
+
 
 const dangerDiv = document.getElementById("danger");
 const successDiv = document.getElementById("success");
@@ -22,7 +20,8 @@ function validate() {
   //Get card number from user
   const cardNumber = document.getElementById("cardnumber").value
   const valid = elements.isValid(cardNumber)
-  const cardBrand = elements.getCardBrand(elements.cardDigits[0]);
+  const cardBrand = elements.getCardBrand(cardNumber);
+  console.log("Marca: " + cardBrand);
 
 
   if (valid) {
@@ -56,11 +55,4 @@ function validate() {
 
 }
 
-const items = {
-  result, description, dangerDiv, successDiv,
-  replacement, tittleBox, msgBox,
-  validate
-}
 
-
-export default items;
