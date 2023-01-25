@@ -163,8 +163,8 @@
 </details>
 
 <div align="center">
-  <img height="220" alt="interfaz Hito 1" src="https://user-images.githubusercontent.com/99364311/214477747-4e1e2121-456b-4045-bb35-4d5107551960.png">
-  <img height="220" alt="codigo Hito 1" src="https://user-images.githubusercontent.com/99364311/214477690-384f6b63-6f69-4d48-8d25-923a43f64c4f.png">
+  <img height="211" alt="interfaz Hito 1" src="https://user-images.githubusercontent.com/99364311/214477747-4e1e2121-456b-4045-bb35-4d5107551960.png">
+  <img height="211" alt="codigo Hito 1" src="https://user-images.githubusercontent.com/99364311/214477690-384f6b63-6f69-4d48-8d25-923a43f64c4f.png">
 
 </div>
 
@@ -178,8 +178,8 @@
 </details>
 
 <div align="center">
-  <img height="220" alt="franquicia Valida" src="https://user-images.githubusercontent.com/99364311/214482214-80acb138-0769-407b-8b63-8ec6febf00ec.png">
-  <img height="220" alt="franquicia Invalida" src="https://user-images.githubusercontent.com/99364311/214482369-76ce82ac-c1f1-4172-b89c-5a39a697c22c.png">
+  <img height="211" alt="franquicia Valida" src="https://user-images.githubusercontent.com/99364311/214482214-80acb138-0769-407b-8b63-8ec6febf00ec.png">
+  <img height="211" alt="franquicia Invalida" src="https://user-images.githubusercontent.com/99364311/214482369-76ce82ac-c1f1-4172-b89c-5a39a697c22c.png">
 
 </div>
 <br/>
