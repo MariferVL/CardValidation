@@ -43,11 +43,6 @@ function isValid(creditCardNumber) {
     if (sumCardDigits % 10 === 0) {
       valid = true;
     }
-
-  } else {
-    alert("En 'Número de Tarjeta' debes ingresar sólo dígitos.")
-  }
-
   return valid
 }
 
@@ -82,7 +77,7 @@ function getCardBrand(creditCardNumber) {
 //replace all digits with # except the last 4.
 function maskify(creditCardNumber) {
   const listNumbers = creditCardNumber.split("");
-  listNumbers.forEach((element) => { for (let i = listNumbers.indexOf(element); i < listNumbers.length - 4; i++) listNumbers[i] = "#"; });
+  listNumbers.forEach((element, i) => { if ( i < listNumbers.length - 4) listNumbers[i] = "#"; });
 
   const maskedNum = listNumbers.join("");
 
