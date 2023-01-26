@@ -8,7 +8,10 @@
  Laboratoria</b></h1>
  <br/>
   
-<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="110px" height="110px">
+<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="220px">
+<br/>
+ <br/>
+ <br/>
 
 <b>Autora</b>
 <br/>
@@ -19,6 +22,7 @@
   <p align="center">
        </summary>
     <br/>
+    <br/>
     <a href="https://github.com/MariferVL/CardValidation-Part2" target="_blank"><strong>Acceso a Documentos »</strong></a>
     <br/>
      <a href="https://marifervl.github.io/CardValidation-Part2/src/" target="_blank"><strong>Acceso a Despliegue »</strong></a>
@@ -27,6 +31,7 @@
   </p>
 </div>
 <br/>
+ <br/>
 
 <details>
   <summary>Indice</summary>
@@ -47,7 +52,7 @@
 
 ## Acerca del Proyecto
 
-<summary> 
+<summary> Con el fin de aumentar los conocimientos en <b>Javascripts</b>, <b>DOM</b> y <b>UX</b> se realizó este proyecto. Así se creó una plataforma que permite ingresar los datos de una tarjeta bancaria y chequea si los datos ingresados son válidos o no. Además, el mensaje informativo entregado muestra la marca financiera de dicha tarjeta bancaria.
 
 
 </summary>
@@ -66,7 +71,8 @@
 ## Objetivos de Aprendizaje Cumplidos
 
   <summary>Durante la estructuración y creación de este proyecto logré<b> adquirir conocimientos</b>  en las siguientes temáticas:</summary>
-    <details>
+    <details>   
+    <br/>
      <summary>1. CSS</summary>
       <ul>
         <li>
@@ -98,14 +104,32 @@
       <ul>
         <li>
           - [x] Tipos de datos primitivos
+        </li>
+        <li>
           - [x] Strings (cadenas de caracteres)
+        </li>
+        <li>
           - [x] Variables (declaración, asignación, ámbito)
+        </li>
+        <li>
           - [x] Uso de condicionales (if-else, switch, operador ternario, lógica booleana)
+        </li>
+        <li>
           - [x] Uso de bucles/ciclos (while, for, for..of)
+        </li>
+        <li>
           - [x] Funciones (params, args, return)
+        </li>
+        <li>
           - [x] Pruebas unitarias (unit tests)
+        </li>
+        <li>
           - [x] Módulos de ECMAScript (ES Modules)
+        </li>
+        <li>
           - [x] Uso de linter (ESLINT)
+        </li>
+        <li>
           - [x] Uso de identificadores descriptivos (Nomenclatura y Semántica)
           </li>
       </ul>
@@ -116,8 +140,14 @@
       <ul>
         <li>
           - [x] Git: Instalación y configuración
+        </li>
+        <li>
           - [x] Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)
+        </li>
+        <li>
           - [x] GitHub: Creación de cuenta y repos, configuración de llaves SSH
+        </li>
+        <li>
           - [x] GitHub: Despliegue con GitHub Pages
         </li>
       </ul> 
@@ -137,6 +167,8 @@
       <ul>
         <li>
           - [x] Crear prototipos de alta fidelidad que incluyan interacciones
+        </li>
+        <li>
           - [x] Seguir los principios básicos de diseño visual
         </li>
       </ul>  
@@ -189,17 +221,49 @@
 
 
 ## Producto
-  <summary><b>Hito 1</b></summary>
+  <summary><b>Consideraciones</b>:</summary>
   <ul>
-    <li><b>UX/UI</b>:  "cómo pensaste en los usuarios + proceso para definir producto final" </li>
-    <li><b></b> "principales usuarios de producto"</li>
-    <li><b></b>  "objetivos de estos usuarios en relación con tu producto"</li>
-    <li><b></b> "Cómo crees que está resolviendo sus problemas"</li>
+    <li><b>UX/UI</b>: 
+      <ul>
+        <li> El valor del atributo <b>tipo</b> en el elemento <b>input</b> fue escogida en para facilitar el uso de la plataforma por parte del usuario. Se optó por tipo <b>text</b> para evitar posibles errores causados por el cambio por flecha en el tipo number.
+        </li>  
+        <li> Toda la interfaz fue creada en pro de los principios de diseño visual. Desde la elección de los colores hasta el tamaño de los inputs y botones se estableció para hacer que el programa fuese lo más intuitivo posible.
+        </li>
+      </ul> 
+    <li><b>Usuarios</b>: 
+      <ul>
+        <li> La plataforma como tal puede ser usada en cualquier sitio web que incluya un <b>proceso de compra</b>.
+        </li>
+        <li> El diseño de la plataforma es neutral, con un apoyo visual de contexto bancario, que tiene la intención de generar confianza en el usuario.
+        </li>
+      </ul>    
+    <li><b>Objetivos del Usuario</b>
+       <ul>
+        <li> Poder corroborar que su tarjeta bancaria está <b>vigente</b> antes de realizar el pago.
+        </li>
+         <li> Realizar una compra con <b>tranquilidad</b>.
+        </li>
+          <li><b>Escoger</b> la tarjeta bancaria que más se acomode a sus requerimientos/necesidades.
+        </li>
+      </ul>    
+    </li>
+    <li><b>Resolución de problemas</b>:
+       <ul>
+        <li> La invalidez de la tarjeta podría explicar una <b>incorrecta inserción</b> de los datos o que la tarjeta está <b>vencida</b>.
+        </li>
+         <li> El enmascaramiento de los números permite mantener la <b>privacidad</b> del usuario.
+        </li>
+        <li> La visibilidad de la marca financiera permite al usuario <b>reconfirmar</b> su eleccipon en pro de los beneficios que desee.
+        </li>
+      </ul>      
+    </li>
   </ul>
 
 ## Video Demo
 
-https://user-images.githubusercontent.com/99364311/208135177-795d5c58-2de1-4a78-87f0-fa1f2673b495.mp4
+
+https://user-images.githubusercontent.com/99364311/214485979-e4656591-9b92-48d1-8959-d27aad651ed7.mp4
+
 
 <br/>
 
